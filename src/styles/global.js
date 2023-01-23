@@ -10,7 +10,17 @@ export default createGlobalStyle`
     body {
         background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
         color: ${({theme}) => theme.COLORS.WHITE};
+
+        -webkit-font-smoothing: antialiased;
+      
     }
+
+    body, input, button, textarea {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        outline: none;
+    }
+
 
     a {
         text-decoration: none;
@@ -22,6 +32,6 @@ export default createGlobalStyle`
     }
 
     button:hover, a:hover {
-        filter: brightness(0.9);
+        filter: brightness(1.2);
     }
 `;
