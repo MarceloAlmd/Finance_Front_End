@@ -59,4 +59,12 @@ export const Form = styled.form`
 
     };
 
+    a {
+        position: absolute;
+        bottom: 60px;
+        font-size: 14px;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        opacity: 0.6;  
+    }
+
 `;

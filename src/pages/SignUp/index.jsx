@@ -35,7 +35,9 @@ export function SignUp() {
                 
                 <Button title="criar conta" />
 
-                
+                <a href="#">
+                    voltar para o login
+                </a>
                 
                 
             </Form>
