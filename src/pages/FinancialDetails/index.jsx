@@ -1,4 +1,4 @@
-import {AiOutlineArrowUp} from 'react-icons/ai'
+import {AiOutlineArrowUp, AiOutlineDelete} from 'react-icons/ai'
 import { Container, Content} from "./styles";
 import { Header } from "../../components/header";
 import {Button} from '../../components/button'
@@ -7,6 +7,7 @@ export function FinancialDetails () {
         <Container>
             <Header />
             <main>
+                
                 <Content>
                     <h1>Investimento</h1>
                     <p>
@@ -23,11 +24,17 @@ export function FinancialDetails () {
                             <AiOutlineArrowUp />
                         </span>
                     </div>
-                    
+
                     <p>
                         Valor: 707,35 R$
                     </p>    
-                    <Button title="Voltar" />
+
+                    <footer>
+                        <Button title="Voltar" />
+                        <button>
+                            <AiOutlineDelete />
+                        </button>
+                    </footer>
                 </Content>
             </main>
         </Container>

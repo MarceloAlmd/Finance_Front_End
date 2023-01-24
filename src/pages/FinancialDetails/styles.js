@@ -51,9 +51,29 @@ export const Content = styled.div`
         padding:12px;
     }
 
-    > button {
-        align-self: center;
-        width: 100%;
-    }
+   
+
+    > footer {
+        > button:nth-child(1) {
+            align-self: center;
+            width: 80%;
+        }
+        max-width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+
+        > button:nth-child(2) {
+            margin-top: 12px;
+            background: none;
+            border: 0;
+            svg {
+                font-size: 38px;
+                color: ${({theme}) => theme.COLORS.RED};
+            }
+
+        }
+    };
 
 `;
