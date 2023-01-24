@@ -10,7 +10,7 @@ export const Container = styled.div`
 
     color: ${({theme}) => theme.COLORS.BACKGROUND_400};
 
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     border-radius: 10px;
 
     > svg {

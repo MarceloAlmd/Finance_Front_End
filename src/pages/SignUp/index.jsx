@@ -13,23 +13,24 @@ export function SignUp() {
                 <p>Seu controle financeiro na ponta do seu dedo</p>
                 <h2>Crie sua conta</h2>
                 
+                <div>
+                    <Input 
+                        icon={HiOutlineUser} 
+                        placeholder="Nome"
+                        type="text"
+                    />
+                    <Input 
+                        icon={HiOutlineMail} 
+                        placeholder="Email"
+                        type="text"
+                    />
 
-                <Input 
-                    icon={HiOutlineUser} 
-                    placeholder="Nome"
-                    type="text"
-                />
-                <Input 
-                    icon={HiOutlineMail} 
-                    placeholder="Email"
-                    type="text"
-                />
-
-                <Input 
-                    icon={HiOutlineLockClosed}
-                    placeholder="Senha"
-                    type="password"
-                />
+                    <Input 
+                        icon={HiOutlineLockClosed}
+                        placeholder="Senha"
+                        type="password"
+                    />
+                </div>
                 
                 
                 

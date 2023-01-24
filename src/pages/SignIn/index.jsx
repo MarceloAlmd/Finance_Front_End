@@ -14,18 +14,20 @@ export function SignIn() {
                 <h2>Entre no Aplicativo</h2>
                 
 
-               
-                <Input 
-                    icon={HiOutlineMail} 
-                    placeholder="Email"
-                    type="text"
-                />
+               <div>
+                    <Input 
+                        icon={HiOutlineMail} 
+                        placeholder="Email"
+                        type="text"
+                    />
 
-                <Input 
-                    icon={HiOutlineLockClosed}
-                    placeholder="Senha"
-                    type="password"
-                />
+                    <Input 
+                        icon={HiOutlineLockClosed}
+                        placeholder="Senha"
+                        type="password"
+                    />
+               </div>
+               
                 
                 <div>
                     <Button title="Entrar" />

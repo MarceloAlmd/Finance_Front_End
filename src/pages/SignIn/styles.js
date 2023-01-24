@@ -48,6 +48,15 @@ export const Form = styled.form`
         padding-bottom: 12px;
     };
 
+    > div:nth-child(4) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
     > div:last-child {
         padding-top: 12px;
 
