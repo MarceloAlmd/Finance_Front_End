@@ -16,7 +16,7 @@ export const Container = styled.div`
     > svg {
         color: ${({theme}) => theme.COLORS.GREEN_300};
         margin-left: 12px;
-    }
+    };
 
     > input {
         height: 46px;
@@ -25,12 +25,11 @@ export const Container = styled.div`
         padding: 12px;
 
         color: ${({theme}) => theme.COLORS.WHITE};
+        opacity: 0.6;
         background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
 
         border: none;
         border-radius: 10px;
 
-
-
-    }
+    };
 `;
