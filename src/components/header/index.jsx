@@ -1,4 +1,4 @@
-import { Container, Menu, Profile, Search } from "./styles";
+import { Container, Profile, Search } from "./styles";
 import { Input } from "../../components/input";
 import {HiSearch} from 'react-icons/hi'
 
@@ -13,33 +13,15 @@ export function Header() {
 
                 <div>
                     <strong>Marcelo magalhaes</strong>
-                    <span>Sair</span>
+                    <button>Sair</button>
                 </div>
             </Profile>
 
-            <Menu>
-               <ul>
-                    <li>
-                        <a href="#">Entradas</a>
-                    </li>
-                    <li>
-                        <a href="#">Saídas</a>
-                    </li>
-                    <li>
-                        <a href="#">Investimentos</a>
-                    </li>
-                    <li>
-                        <a href="#">Pix</a>
-                    </li>
-                    <li>
-                        <a href="#">Cartão</a>
-                    </li>
-                    
-                </ul>
-            </Menu>
-
             <Search>
-                <Input icon={HiSearch}/>
+                <Input 
+                    placeholder="Pesquisar um financeiro"
+                    icon={HiSearch}
+                />
             </Search>
             
         </Container>
