@@ -3,17 +3,13 @@ import {Header} from '../../components/header'
 import {Input} from "../../components/input";
 import {TextArea} from "../../components/textArea";
 import {Button} from '../../components/button'
+import { Link } from 'react-router-dom';
 
 export function NewFinancial() {
     return(
         <Container>
             <Header />
             <main>
-
-                <div>
-
-                </div>
-                
                 <Form>
                     <header>
                         <h1>lançamento financeiro</h1>
@@ -24,11 +20,16 @@ export function NewFinancial() {
                         placeholder="Observações"
                     />
                     <Input placeholder="Tipo: entrada ou saída" />
-                    <Input placeholder="Valor" />
+                    <Input 
+                        placeholder="Valor" 
+                        type="number"
+                    />
 
                     <div>
                         <Button title="Lançar" />
-                        <Button title="Cancelar" />
+                        <Link to="/">
+                            Cancelar
+                        </Link>
                     </div>
                 </Form>
             </main>

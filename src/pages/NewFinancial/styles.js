@@ -34,15 +34,47 @@ export const Form = styled.form`
         margin-bottom: 12px;
     }
 
+    > div:nth-child(5) {
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
     > div:last-child {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 76px;
+
+        a {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            height: 46px;
+
+            background: ${({theme}) => theme.COLORS.GREEN_300};
+            color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+            border: none;
+            border-radius: 10px;
+
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+            border-bottom-color: ${({theme}) => theme.COLORS.GREEN_600};
+
+            margin-top: 12px;
+        }
     }
 
     > header {
         text-align: center;
         margin-bottom: 36px;
+        color: ${({theme}) => theme.COLORS.GREEN_300};
     }
 `;

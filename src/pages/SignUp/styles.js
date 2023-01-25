@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Form = styled.form`
     width: 700px;
     height: 700px;
-    background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_400};
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -72,9 +72,8 @@ export const Form = styled.form`
     a {
         position: absolute;
         bottom: 60px;
-        font-size: 14px;
-        color: ${({theme}) => theme.COLORS.WHITE};
-        opacity: 0.6;  
+        font-size: 16px;
+        color: ${({theme}) => theme.COLORS.GREEN_300};
     }
 
 `;

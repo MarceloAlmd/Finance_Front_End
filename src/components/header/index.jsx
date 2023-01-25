@@ -2,10 +2,12 @@ import { Container, Profile, Search } from "./styles";
 import { Input } from "../../components/input";
 import {HiSearch} from 'react-icons/hi'
 
+
+
 export function Header() {
     return(
         <Container>
-            <Profile>
+            <Profile to="/profile">
                 <img 
                     src="http://github.com/marceloalmd.png" 
                     alt="foto de perfil do usuário"

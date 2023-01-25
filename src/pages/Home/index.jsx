@@ -3,7 +3,6 @@ import {
     AiOutlineCalendar,
     AiOutlineUser,
     AiOutlineStar,
-    AiOutlineBug,
     AiOutlineSetting,
     AiOutlineLogout,
     AiOutlinePlus,
@@ -18,7 +17,7 @@ import {
     AiOutlineBarcode,
     AiOutlineArrowUp
 } from 'react-icons/ai'
-
+import { Link } from 'react-router-dom';
 import {Container, Brand, Menu, Side, Content, NewFinancial} from './styles'; 
 import {Header} from '../../components/header'
 import { CardsSide } from '../../components/cardsSide';
@@ -45,7 +44,6 @@ export function Home() {
                     title="lançamentos"
                 />
                 
-                
                 <CardsSide 
                     icon={AiOutlineCalendar}
                     title="Calendario"
@@ -58,10 +56,7 @@ export function Home() {
                     icon={AiOutlineStar}
                     title="Favoritos"
                 />
-                <CardsSide 
-                    icon={AiOutlineBug}
-                    title="reportar bug"
-                />
+
                 <CardsSide 
                     icon={AiOutlineSetting}
                     title="Configurações"
@@ -181,7 +176,7 @@ export function Home() {
                 </Financial>
             </Content>
 
-            <NewFinancial>
+            <NewFinancial to="/new"> 
                 <AiOutlinePlus/>
                     novo lançamento
                 <AiOutlineArrowDown/>

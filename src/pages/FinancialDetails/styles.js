@@ -54,15 +54,39 @@ export const Content = styled.div`
    
 
     > footer {
-        > button:nth-child(1) {
-            align-self: center;
-            width: 80%;
-        }
         max-width: 450px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 60px;
+
+        > button:nth-child(1) {
+            align-self: center;
+            width: 80%;
+        }
+
+        a {
+            width: 90%;
+            height: 46px;
+
+            background: ${({theme}) => theme.COLORS.GREEN_300};
+            color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+            border-bottom-color: ${({theme}) => theme.COLORS.GREEN_600};
+
+            margin-top: 12px;
+        }
+
+      
 
         > button:nth-child(2) {
             margin-top: 12px;

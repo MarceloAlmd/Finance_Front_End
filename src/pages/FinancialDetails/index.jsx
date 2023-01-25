@@ -1,7 +1,7 @@
 import {AiOutlineArrowUp, AiOutlineDelete} from 'react-icons/ai'
 import { Container, Content} from "./styles";
 import { Header } from "../../components/header";
-import {Button} from '../../components/button'
+import { Link } from 'react-router-dom';
 export function FinancialDetails () {
     return(
         <Container>
@@ -30,7 +30,9 @@ export function FinancialDetails () {
                     </p>    
 
                     <footer>
-                        <Button title="Voltar" />
+                        <Link to="/">
+                            Voltar
+                        </Link>
                         <button>
                             <AiOutlineDelete />
                         </button>

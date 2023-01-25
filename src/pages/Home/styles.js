@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container  = styled.div`
     width: 100%;
@@ -84,7 +85,7 @@ export const Content  = styled.div`
     justify-content: center;
     gap: 30px;
 `;
-export const NewFinancial = styled.button`
+export const NewFinancial = styled(Link)`
     grid-area: newFinancial;
 
     display: flex;
@@ -94,7 +95,7 @@ export const NewFinancial = styled.button`
 
     background: ${({theme}) => theme.COLORS.BACKGROUND_400};
     color: ${({theme}) => theme.COLORS.WHITE};
-    border: none;
+   
 
     > svg:first-child{
         color: ${({theme}) => theme.COLORS.GREEN};

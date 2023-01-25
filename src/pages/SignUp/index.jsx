@@ -1,5 +1,5 @@
 import {HiOutlineMail, HiOutlineLockClosed, HiOutlineUser} from 'react-icons/hi'
-
+import { Link } from 'react-router-dom';
 import {Input} from '../../components/input'
 import {Button} from '../../components/button'
 import { Container, Form} from "./styles";
@@ -36,9 +36,9 @@ export function SignUp() {
                 
                 <Button title="criar conta" />
 
-                <a href="#">
+                <Link to="/">
                     voltar para o login
-                </a>
+                </Link>
                 
                 
             </Form>
