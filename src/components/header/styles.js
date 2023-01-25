@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
     grid-area: header;
 
-    height: 135px;
+    height: 100px;
     width: 100%;
 
     background: ${({theme}) => theme.COLORS.BACKGROUND_900};
@@ -27,17 +27,13 @@ export const Profile = styled.div`
         flex-direction: column;
         margin-left: 12px;
         > strong {
-            opacity: 0.7;
+            opacity: 0.8;
             font-size: 18px;
         }
 
-        > button {
-            background: 0;
-            border: 0;
-            width: 1px;
+        > span {
             color: ${({theme}) => theme.COLORS.WHITE};
-            font-weight: 600;
-            transition: all .4s;
+            opacity: 0.5;
         }
 
         > button:hover {

@@ -12,8 +12,8 @@ export function Header() {
                  />
 
                 <div>
+                    <span>bem-vindo</span>
                     <strong>Marcelo magalhaes</strong>
-                    <button>Sair</button>
                 </div>
             </Profile>
 
