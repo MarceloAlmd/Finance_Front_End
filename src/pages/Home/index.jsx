@@ -84,44 +84,75 @@ export function Home() {
 
             <Content>
                 <Financial title="entradas">
+                 
                     <FinancialLaunch 
-                        title="Investimento"
+                        title="Aluguel"
+                        value="R$ 873,54"
+                        icon={AiOutlineArrowUp}
+                        isEntry
+                    />
+                    <FinancialLaunch 
+                        title="Mercado"
                         value="R$ 973,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="bolsa"
-                        value="R$ 1973,54"
+                        title="Aluguel"
+                        value="R$ 873,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="Câmbio"
-                        value="R$ 73,54"
+                        title="Mercado"
+                        value="R$ 973,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="Viagem"
-                        value="R$ 343,54"
+                        title="Aluguel"
+                        value="R$ 873,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="NuInvest"
-                        value="R$ 3973,54"
+                        title="Mercado"
+                        value="R$ 973,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="Computador"
-                        value="R$ 9573,54"
+                        title="Aluguel"
+                        value="R$ 873,54"
                         icon={AiOutlineArrowUp}
                         isEntry
                     />
                     <FinancialLaunch 
-                        title="Investimento"
+                        title="Mercado"
+                        value="R$ 973,54"
+                        icon={AiOutlineArrowUp}
+                        isEntry
+                    />
+                    <FinancialLaunch 
+                        title="Aluguel"
+                        value="R$ 873,54"
+                        icon={AiOutlineArrowUp}
+                        isEntry
+                    />
+                    <FinancialLaunch 
+                        title="Mercado"
+                        value="R$ 973,54"
+                        icon={AiOutlineArrowUp}
+                        isEntry
+                    />
+                    <FinancialLaunch 
+                        title="Aluguel"
+                        value="R$ 873,54"
+                        icon={AiOutlineArrowUp}
+                        isEntry
+                    />
+                    <FinancialLaunch 
+                        title="Mercado"
                         value="R$ 973,54"
                         icon={AiOutlineArrowUp}
                         isEntry
@@ -146,43 +177,7 @@ export function Home() {
                         value="R$ 73,54"
                         icon={AiOutlineArrowDown}
                     />
-                    <FinancialLaunch 
-                        title="Lanche"
-                        value="R$ 83,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Jogos"
-                        value="R$ 23,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Rolê"
-                        value="R$ 7,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Casamento"
-                        value="R$ 1973,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Rolê"
-                        value="R$ 93,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Capivara"
-                        value="R$ 3,54"
-                        icon={AiOutlineArrowDown}
-                    />
-                    <FinancialLaunch 
-                        title="Camisa"
-                        value="R$ 73,54"
-                        icon={AiOutlineArrowDown}
-                    />
-
-                    
+   
                 </Financial>
             </Content>
 

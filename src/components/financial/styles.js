@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
-    min-width: 450px;
+export const Container = styled.div`
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,15 +9,15 @@ export const Container = styled.main`
     > h1 {
         font-size: 18px;
         font-weight: normal;
+        margin-bottom: 12px;
         
     }
 
     > div {
         background: ${({theme}) => theme.COLORS.BACKGROUND_900};
         width: 100%; 
-        height: 550px;
-        border-top-left-radius: 19px;
-        border-top-right-radius: 19px;
+        height: 540px;
+        border-radius: 19px;
 
         padding: 26px;
 

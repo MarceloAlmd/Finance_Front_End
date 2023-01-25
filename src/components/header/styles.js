@@ -6,7 +6,7 @@ export const Container = styled.header`
     height: 100px;
     width: 100%;
 
-    background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+    background: ${({theme}) => theme.COLORS.BACKGROUND_800};
 
     display: flex;
     align-items: center;
@@ -53,5 +53,12 @@ export const Search = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    > div {
+        background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        > input {
+            background: none;
+        }
+    }
 
 `;

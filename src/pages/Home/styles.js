@@ -38,7 +38,7 @@ export const Menu  = styled.nav`
    
     width: 650px;
     margin: auto;
-    height: 145px;
+    height: 165px;
 
     display: flex;
     align-items: center;
@@ -66,6 +66,7 @@ export const Menu  = styled.nav`
 
 export const Side  = styled.div`
     grid-area: side;
+    background: ${({theme}) => theme.COLORS.BACKGROUND_900};
     padding: 35px 12px 35px 12px;
 
     > div:hover {
