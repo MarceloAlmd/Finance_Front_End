@@ -6,6 +6,7 @@ export const AuthContext = createContext({});
 
 function AuthProvider({children}) {
     const [data, setData] = useState({})
+
     async function signIn({email, password}) {
 
         try {
@@ -28,6 +29,13 @@ function AuthProvider({children}) {
         
     };
 
+    function logout() {
+        localStorage.removeItem("@financial:token");
+        localStorage.removeItem("@financial:user");
+
+        setData({});
+    }
+
     useEffect(() => {
         const token = localStorage.getItem("@financial:token")
         const user = localStorage.getItem("@financial:user")
@@ -42,7 +50,11 @@ function AuthProvider({children}) {
     }, []);
     
     return (
-        <AuthContext.Provider value={{signIn, user: data.user}}>
+        <AuthContext.Provider value={{
+            signIn, 
+            logout,
+            user: data.user
+        }}>
             {children}
         </AuthContext.Provider>
     );

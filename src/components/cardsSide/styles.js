@@ -16,6 +16,8 @@ export const Container = styled.div`
     > button {
         background: 0;
         border: 0;
+        /* border: 1px solid red; */
+        /* width: 100%; */
 
         font-size: 18px;
         font-weight: 400;

@@ -17,6 +17,7 @@ import {
     AiOutlineBarcode,
     AiOutlineArrowUp
 } from 'react-icons/ai'
+import {useAuth} from '../../hooks/auth';
 import {Container, Brand, Menu, Side, Content, NewFinancial} from './styles'; 
 import {Header} from '../../components/header'
 import { CardsSide } from '../../components/cardsSide';
@@ -24,6 +25,7 @@ import { MenuCards } from '../../components/menuCards';
 import { Financial } from '../../components/financial';
 import { FinancialLaunch } from '../../components/financialLaunch';
 export function Home() {
+    const {logout} = useAuth()
     return (
         <Container>
             <Brand>
@@ -60,10 +62,13 @@ export function Home() {
                     icon={AiOutlineSetting}
                     title="Configurações"
                 />
+
                 <CardsSide 
                     icon={AiOutlineLogout}
                     title="Sair"
+                    onClick={logout}
                 />
+        
             </Side>
 
             <Menu>
