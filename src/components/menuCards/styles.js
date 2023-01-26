@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     min-width: 120px;
     min-height: 120px;
-    background: ${({theme}) => theme.COLORS.WHITE};
+    background: ${({theme}) => theme.COLORS.GREEN_300};
     border-radius: 10px;
 
     display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
         border: 0;
         background: transparent;
         > svg {
-            color: ${({theme}) => theme.COLORS.GREEN_300};
+            color: ${({theme}) => theme.COLORS.BACKGROUND_900};
         }
     }
 

@@ -35,15 +35,15 @@ export const Brand  = styled.div`
     }
 `;
 export const Menu  = styled.nav`
+    
     grid-area: menu;
-   
-    width: 650px;
+    width: 700px;
     margin: auto;
-    height: 165px;
+    height: 140px;
 
     display: flex;
     align-items: center;
-
+    justify-content: center;
     padding: 0 12px;
     overflow-x: auto;
     border-radius: 10px;
@@ -53,7 +53,7 @@ export const Menu  = styled.nav`
     }
 
     ::-webkit-scrollbar {
-        width: 1px;
+        height: 6px;
     }
     ::-webkit-scrollbar-thumb {
         box-shadow: inset 0 0 0 6px transparent;
@@ -81,7 +81,6 @@ export const Content  = styled.div`
     padding: 24px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 30px;
 `;
