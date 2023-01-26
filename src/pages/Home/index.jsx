@@ -17,7 +17,6 @@ import {
     AiOutlineBarcode,
     AiOutlineArrowUp
 } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
 import {Container, Brand, Menu, Side, Content, NewFinancial} from './styles'; 
 import {Header} from '../../components/header'
 import { CardsSide } from '../../components/cardsSide';

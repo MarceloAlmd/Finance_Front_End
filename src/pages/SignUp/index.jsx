@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {HiOutlineMail, HiOutlineLockClosed, HiOutlineUser} from 'react-icons/hi'
 import { Link } from 'react-router-dom';
 import {Input} from '../../components/input'
@@ -5,10 +6,11 @@ import {Button} from '../../components/button'
 import { Container, Form} from "./styles";
 
 export function SignUp() {
+    const [name, setName] = useState("");
     return (
         <Container>
             <Form>   
-               
+
                 <h1>Finances on Hand</h1>
                 <p>Seu controle financeiro na ponta do seu dedo</p>
                 <h2>Crie sua conta</h2>
