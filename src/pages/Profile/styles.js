@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import avatarimg from '../../assets/avatar_placeholder.svg'
 export const Container = styled.div`
     width: 100%;
 
