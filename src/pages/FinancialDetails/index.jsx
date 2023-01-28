@@ -1,44 +1,68 @@
-import {AiOutlineArrowUp, AiOutlineDelete} from 'react-icons/ai'
 import { Container, Content} from "./styles";
+import { useState, useEffect } from 'react';
+import {AiOutlineDelete} from 'react-icons/ai'
+import { useParams } from 'react-router-dom';
 import { Header } from "../../components/header";
 import { Link } from 'react-router-dom';
+import { api } from '../../services/api';
+import { useNavigate } from "react-router-dom";
+
 export function FinancialDetails () {
+    const [data, setData] = useState(null)
+    const navigate = useNavigate()
+    const params = useParams();
+
+    async function deleteDetails() {
+        const confirm = window.confirm("Deseja realmente remover a nota ?")
+        if(confirm) {
+            await api.delete(`/finance/${params.id}`);
+            alert("lançamento deletado")
+            navigate("/")
+        }
+    }
+
+    useEffect(() => {
+       async function fetchFinancialDetails() {
+            const response = await api.get(`/finance/${params.id}`);
+            setData(response.data)
+       }
+
+       fetchFinancialDetails()
+    }, [])
     return(
         <Container>
             <Header />
-            <main>
-                
-                <Content>
-                    <h1>Investimento</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iusto maxime architecto fugit alias maiores obcaecati 
-                        tempora similique, iste, eius enim dolores 
-                        atque dicta quas molestias, voluptatum nisi quos temporibus ea.
-                    </p>
-                    
-                    
-                    <div>
-                        Entrada
-                        <span>
-                            <AiOutlineArrowUp />
-                        </span>
-                    </div>
 
-                    <p>
-                        Valor: 707,35 R$
-                    </p>    
+            {
+                data &&  
+                    
+                <main>
+                    
+                    <Content>
+                        <h1>{data.title}</h1>
 
-                    <footer>
-                        <Link to="/">
-                            Voltar
-                        </Link>
-                        <button>
-                            <AiOutlineDelete />
-                        </button>
-                    </footer>
-                </Content>
-            </main>
+                        <p>{data.description}</p>
+                        
+                        
+                        <p>{data.type}</p>
+
+                        <p>{`R$ ${data.value}`}</p>    
+                        
+                        <footer>
+                            <Link to="/">
+                                Voltar
+                            </Link>
+                            <button
+                                type="button"
+                                onClick={deleteDetails}
+                            >
+                                
+                                <AiOutlineDelete />
+                            </button>
+                        </footer>
+                    </Content>
+                </main>
+            }
         </Container>
     )
 }

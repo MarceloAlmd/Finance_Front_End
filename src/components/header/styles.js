@@ -11,12 +11,14 @@ export const Container = styled.header`
 
     display: flex;
     align-items: center;
-    justify-content:space-between ;    
+    flex-direction: row-reverse;
+
     padding: 0 80px;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_400};
+
 `;
 
 export const Profile = styled(Link)`
@@ -25,6 +27,7 @@ export const Profile = styled(Link)`
     padding: 12px;
 
     color: ${({theme}) => theme.COLORS.WHITE};
+    
 
     > div {
         display: flex;
@@ -57,6 +60,8 @@ export const Search = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    display: none;
 
     > div {
         background: ${({theme}) => theme.COLORS.BACKGROUND_900};

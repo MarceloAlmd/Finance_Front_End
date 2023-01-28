@@ -18,7 +18,7 @@ export const Container = styled.div`
     > div {
         background: ${({theme}) => theme.COLORS.BACKGROUND_900};
         width: 100%; 
-        max-height: 550px;
+        height: 350px;
         border-radius: 19px;
         box-shadow: 1px 0 20px 1px ${({theme}) => theme.COLORS.BACKGROUND_400};
 

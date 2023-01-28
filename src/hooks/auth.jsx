@@ -80,7 +80,7 @@ function AuthProvider({children}) {
             signIn, 
             logout,
             updatedProfile,
-            user: data.user
+            user: data.user,
         }}>
             {children}
         </AuthContext.Provider>

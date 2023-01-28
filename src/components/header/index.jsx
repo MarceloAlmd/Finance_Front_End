@@ -1,8 +1,9 @@
 import {useAuth} from '../../hooks/auth'
 import {api} from '../../services/api'
-
+import avatarImg from '../../assets/avatar_placeholder.svg'
 import { Container, Profile, Search } from "./styles";
 import { Input } from "../../components/input";
+
 import {HiSearch} from 'react-icons/hi'
 
 
@@ -13,10 +14,12 @@ export function Header() {
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarImg;
     return(
         <Container>
+           
+            
             <Profile to="/profile">
                 <img 
                     src={avatarUrl} 
-                    alt={user.name}
+                    alt="foto de perfil do usuário"
                  />
 
                 <div>

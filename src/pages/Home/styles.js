@@ -6,10 +6,10 @@ export const Container  = styled.div`
     height: 100vh;
     
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 350px auto;
     grid-template-rows: 100px 175px auto 64px;
     grid-template-areas: 
-        "brand header"
+        "search header"
         "side menu"
         "side content"
         "newFinancial content"
@@ -17,8 +17,8 @@ export const Container  = styled.div`
 
     background: ${({theme}) => theme.COLORS.BACKGROUND_800};
 `;
-export const Brand  = styled.div`
-    grid-area: brand;
+export const Search  = styled.div`
+    grid-area: search;
     background: ${({theme}) => theme.COLORS.BACKGROUND_900};
 
     display: flex;
@@ -28,6 +28,26 @@ export const Brand  = styled.div`
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_400};
+
+    > button {
+        border: none;
+        margin-right: 12px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div {
+        width: 100%;
+        background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        margin-right: 8px;
+
+        input {
+            margin-left: 8px;
+    
+        }
+    }
 
     > h1 {
         font-size: 24px;

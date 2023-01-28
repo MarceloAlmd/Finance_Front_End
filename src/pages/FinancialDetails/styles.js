@@ -41,11 +41,8 @@ export const Content = styled.div`
         }
     }
 
-    > p {
-        text-align: justify;
-    }
 
-    > p:nth-child(4) {
+    > p {
         background: ${({theme}) => theme.COLORS.BACKGROUND_400};
         border-radius: 10px;
         padding:12px;
