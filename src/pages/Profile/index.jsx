@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {useAuth} from "../../hooks/auth"
 import {Container, Form, Avatar} from './styles';
 import {Input} from '../../components/input'
@@ -9,7 +10,7 @@ import avatarImg from '../../assets/avatar_placeholder.svg'
 import {api} from '../../services/api'
 export function Profile() {
     const {user, updatedProfile} = useAuth()
-
+    const navigate = useNavigate()
     const [name, setName] = useState(user.name)
     const [email, setEmail] = useState(user.email)
     const [passwordNew, setPasswordNew] = useState()
@@ -29,6 +30,8 @@ export function Profile() {
         };
 
         await updatedProfile({user, avatarFile})
+
+        navigate("/")
     }
 
     function handleAvatarChange (event) {

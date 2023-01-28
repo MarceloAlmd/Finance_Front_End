@@ -59,6 +59,7 @@ export function Home() {
                     placeholder="pesquisar lançamentos"
                     onChange={e => setSearch(e.target.value)}
                 />
+
                 <Button 
                     onClick={fetchFinance}
                     icon={AiOutlineSearch} 
