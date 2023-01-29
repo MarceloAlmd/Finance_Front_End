@@ -13,7 +13,7 @@ export function FinancialDetails () {
     const params = useParams();
 
     async function deleteDetails() {
-        const confirm = window.confirm("Deseja realmente remover a nota ?")
+        const confirm = window.confirm("Deseja realmente remover o lançamento ?")
         if(confirm) {
             await api.delete(`/finance/${params.id}`);
             alert("lançamento deletado")

@@ -77,4 +77,54 @@ export const Form = styled.form`
         margin-bottom: 36px;
         color: ${({theme}) => theme.COLORS.GREEN_300};
     }
+
+    > div:nth-child(4) {
+        background: ${({theme}) => theme.COLORS.BACKGROUND_800};
+        height: 56px;
+        padding: 16px;
+
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        color: grey;
+
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .radioEntry{
+            appearance: none;
+            width: 20px;
+            height: 20px;
+
+            border: 1px solid grey;
+            border-radius: 50%;
+
+            :checked {
+                background: ${({theme}) => theme.COLORS.GREEN_300};
+                border: none;
+            }
+        }
+
+        .radioOut {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+
+            border: 1px solid grey;
+            border-radius: 50%;
+
+            :checked {
+                background: ${({theme}) => theme.COLORS.RED};
+                border: none;
+            }
+        }
+
+    
+
+    }
+   
 `;

@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Financial({title, children}) {
+export function Financial({title,children}) {
     return(
-        <Container>
+        <Container >
             <h1>{title}</h1>
             <div>
                 {children}

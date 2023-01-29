@@ -20,14 +20,13 @@ export function NewFinancial() {
         if(!title) {
             return alert("Prencha o campo de título")
         }
-
         if(!type) {
-            return alert("Prencha o campo de tipo")
+            return alert("marque se é entrada ou saída")
         }
-
         if(!theValue) {
             return alert("Informe o valor que deseja adicionar")
         }
+
 
         await api.post("/finance", {
             title,
@@ -59,12 +58,39 @@ export function NewFinancial() {
                         onChange={e => setDescription(e.target.value)}
                     />
 
-                    <Input 
-                        placeholder="Tipo: entrada ou saída" 
-                        onChange={e => setType(e.target.value)}
-                    />
 
+                    <div>
+                        <div>
+                            <label htmlFor="entrada">entrada</label>
+                            <input
+                                className="radioEntry"
+                                htmlFor="entrada"
+                                type="radio" 
+                                name="type"
+                                value="entrada"
+                                onChange={e => setType(e.target.value)}    
+                            />
+                        </div>
+                        
+
+                        <div>
+                            <label htmlFor="saida">saída</label>
+                            <input
+                                className="radioOut" 
+                                htmlFor="saida"
+                                type="radio" 
+                                name="type"  
+                                value="saida"  
+                                onChange={e => setType(e.target.value)}   
+                            />
+                        </div>
+                        
+                    </div>
+
+
+                
                     <Input 
+
                         placeholder="Valor" 
                         type="number"
                         onChange={e => setTheValue(e.target.value)}

@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 
     > div {
-        background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        background: ${({theme, isEmpty}) => isEmpty ? theme.COLORS.BACKGROUND_400 : theme.COLORS.BACKGROUND_900};
         width: 100%; 
         height: 350px;
         border-radius: 19px;
